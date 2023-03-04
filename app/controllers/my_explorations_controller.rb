@@ -3,7 +3,7 @@ require 'openai'
 class MyExplorationsController < ApplicationController
     def index
       puts "Before OpenAI"
-      openai_client = OpenAI::Client.new(api_key: "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", default_engine: "ada")
+      openai_client = OpenAI::Client.new(api_key: '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', default_engine: "ada")
       puts openai_client
       # List Engines
       # openai_client.engines
