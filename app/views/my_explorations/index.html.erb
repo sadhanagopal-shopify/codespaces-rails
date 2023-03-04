@@ -4,14 +4,14 @@
   <p class="small">
      <h2>Greetings!</h2>
         <p><%= @reply %></p>
+        <% form_tag("my_explorations", :method => "post") do %>
+          <%= label_tag(:q, "Search for:") %>
+          <%= text_field_tag(:q) %>
+          <%= submit_tag("chat") %>
+        <% end %>
     </p>
 
-<%= form_with url: "/chat", method: :post do |form| %>
-  <%= form.label :Message %>
-  <%= form.text_field :message %>
-<%# <%= button_to 'Call Action',  method:"/chat" :post %> 
 
-   
-<% end %>
+
   </header>
 </div>
