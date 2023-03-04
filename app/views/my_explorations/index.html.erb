@@ -1,0 +1,11 @@
+
+<%= form_with url: "/chat", method: :post do |form| %>
+  <%= form.label :Message %>
+  <%= form.text_field :message %>
+<%# <%= button_to 'Call Action',  method:"/chat" :post %> %>
+
+    <p class="small">
+     <h2>ChatGPT Response:</h2>
+        <p><%= @reply %></p>
+    </p>
+<% end %>
