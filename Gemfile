@@ -44,6 +44,8 @@ gem "bootsnap", require: false
 
 gem 'openai'
 
+gem 'graphql', '~> 2.0', '>= 2.0.19'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -75,3 +77,4 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+gem "graphiql-rails", group: :development
